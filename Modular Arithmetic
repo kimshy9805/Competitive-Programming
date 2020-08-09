@@ -1,0 +1,3 @@
+(A-B)%mod = (A-B + mod)%mod
+
+in case (A-B)%mod can be a negative integer. 
