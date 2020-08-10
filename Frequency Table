@@ -1,0 +1,14 @@
+여러 frequency table을 이용한 문제들이 나옴
+
+
+basic implementation
+
+freq = [0]*n
+for i in range(0,n):
+    freq[ar[i]] += 1
+    
+    
+해당 array에 대한 frequency table을 줌
+
+
+
