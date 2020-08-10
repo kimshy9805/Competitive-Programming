@@ -1,0 +1,36 @@
+basic binary search implementation
+
+import bisect
+
+Bisect(array, target, low, high) //search the index of rightmost insertion point 
+
+Bisect_left(array, target, low, high) // search the index of leftmost insertion point
+
+
+
+
+l = 0
+h = n-1
+
+    while l <= h:
+        m = (l+h)//2
+
+        if median == ar[m]:
+            if ar[m] == ar[m+1]: //this additional line gives you Bisect_right operation 
+                l = m+1
+            else:
+                break
+        elif median < ar[m]:
+            h = m-1
+        else:
+            l = m+1
+
+
+
+
+
+
+
+
+
+
