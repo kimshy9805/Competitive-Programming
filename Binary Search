@@ -1,4 +1,9 @@
 basic binary search implementation
+항상 Binary Search로 얻고 싶은게 뭔지부터 파악하는게 중요함
+단순히 target이 존재하기만 하면되는것인지, leftmost index를 찾고 싶은것인지, rightmost index, 혹은 target 이후 의 값인지 등등 
+
+
+
 
 import bisect
 
