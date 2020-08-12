@@ -4,14 +4,11 @@ basic binary search implementation
 
 
 
-
 import bisect
 
 Bisect(array, target, low, high) //search the index of rightmost insertion point 
 
 Bisect_left(array, target, low, high) // search the index of leftmost insertion point
-
-
 
 
 l = 0
@@ -32,7 +29,24 @@ h = n-1
 
 
 
+Modified version 
 
+
+
+
+이런식의 modified version이 있음. 
+CodeForce Maximum Median 문제 
+총 k의 범위에서 possible candidates들을 모두 binary search를 통해서 값을 찾는경우 
+특이점은 usual 하게 h = mid-1 && l = mid+1 가 아닌 
+mid = l, while != h, mid = (l+h+1)//2 이렇게 두었음. 
+
+    while l != h:
+        mid = (l+h+1)//2
+
+        if check(mid,k,n) is False:
+            h = mid -1
+        else:
+            l = mid
 
 
 
