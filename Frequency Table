@@ -1,14 +1,37 @@
 여러 frequency table을 이용한 문제들이 나옴
 
-
-basic implementation
+Array를 이용한 frequency table
 
 freq = [0]*n
 for i in range(0,n):
     freq[ar[i]] += 1
     
+   
+
+
+Dictionary를 이용한 frequency table 
+
+from collections import Counter
+
+dict = Counter(ar)
+key = [], value = []
+for k,v in dict.items():
+    key.append(k)
+    value.append(v)
     
-해당 array에 대한 frequency table을 줌
+
+2. sort by value
+    //return dictionary format
+    dict = {k: v for k, v in sorted(dict.items(), key=lambda item: item[1])
+    
+    //return array format 
+    deseceding order
+    dict = sorted(dict.items(), key=lambda x: x[1], reverse=True)
+
+3. sort by key 
+    dict = sorted(d.items())
+    
+    
 
 
 
