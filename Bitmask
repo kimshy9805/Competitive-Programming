@@ -38,7 +38,7 @@ Problem:
   given 2 6 4 0
         2 4
  
-Approach: try every possible answer 0,1<<9
+Approach: try every possible answer 0,1<<9. 
   brute force all c1 ~~ cn. 
 
 Observation: 
