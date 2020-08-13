@@ -1,0 +1,52 @@
+각 operations의 property를 아는게 중요
+
+1. OR operation
+  두개의 bit중 한개라도 on이 되면 1로 바뀌어짐
+  1|1 = 1
+  0|1 = 1
+  1|0 = 1
+  0|0 = 0
+
+
+
+2. AND operation
+  두개의 bit가 전부다 on이 되어야만 1로 바뀌어짐 
+  1&1 = 1
+  0&0 = 0
+  0&1 = 0
+  1&0 = 0
+
+
+
+
+3. XOR operation 
+
+
+
+
+
+for i in range(0,1<<9) //이건 2^9까지의 bit까지 iterate 한다는 의미 
+  그러면 i값은 at most 512 
+  
+  
+  
+  
+#664 Div2 
+C. Boboniu and Bit Operations
+Problem: 
+  find the minimum c1|c2|c3|... value, where c1 = a[i]&b[j].
+  given 2 6 4 0
+        2 4
+ 
+Approach: try every possible answer 0,1<<9
+  brute force all c1 ~~ cn. 
+
+Observation: 
+  c1|c2|c3 = 5 가정(x)
+  5 => 101인데 c1,c2,c3 전부다 4,1의 bit만 turned on 되고 2 bit는 turned off가 되어야함 
+  그래서 모든 경우의 수를 brute force해서 최소 c1|c2|~~cn의 값을 찾으면됨. 
+  c1|x == x라면 c1은 okay 
+  
+
+  
+  
