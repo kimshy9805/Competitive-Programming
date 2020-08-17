@@ -1,0 +1,26 @@
+Multi-dimension Array Initialization
+
+dp = [[[0 for k in range(bn+1)] for j in range(gn+1)] for i in range(rn+1)]
+
+
+
+
+
+
+
+
+dp approach
+1. 뒤에 값들을 기준으로 현재값들을 만들것이냐
+
+
+2. 현재값을 기준으로 미래값들을 만들것이냐 
+
+
+
+
+
+
+    D. Colored Rectangles
+    
+    
+        
