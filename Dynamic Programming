@@ -19,8 +19,10 @@ dp approach
 
 
 
-
-    D. Colored Rectangles
     
+    Atcoder DP contest 
+    frog2, vacation 
+    D. Colored Rectangles
+    이런 문제들이 모든 제한 값이 작을 경우 모든 경우의수를 compute해서 값을 찾는것. 
     
         
