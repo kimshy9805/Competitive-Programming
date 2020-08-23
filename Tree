@@ -1,1 +1,26 @@
-1
+1. Count the number of subtree in a specific node
+  approach 1
+  def dfs(node):
+    visited[node]= 1
+    curr = 1
+
+    for neighbor in g[node]:
+        if visited[neighbor] == 0:
+            curr += dfs(neighbor)
+
+    subtree[node] = curr
+    return curr
+    
+    approach 2
+    def dfs1(node,child):
+      subtree[node] += 1
+
+      for neighbor in g[node]:
+          if neighbor == child: continue
+          dfs1(neighbor,node)
+          subtree[node] += subtree[neighbor]
+    
+    subtree라는 array안에 subtree의 size가 저장 되어 있음. 
+
+
+
