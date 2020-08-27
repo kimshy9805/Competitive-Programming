@@ -9,7 +9,15 @@ Greedy 문제를 풀때 마음가짐
   다른 방법을 찾아봐야함 
 
 
+array가 주어졌을때 만들수 있는 조합의 수 구하는 algortihm 
+from itertools import chain, combinations
 
+def all_subsets(ss):
+    return chain(*map(lambda x: combinations(ss, x), range(0, len(ss)+1)))
+
+    for subset in all_subsets(ar):
+        temp = list(map(int,subset))
+ 여기서 subset은 tuple 형식이라 list로 변환시켜줘야함 
 
 
 
