@@ -22,6 +22,8 @@ def all_subsets(ss):
 
 
 
+
+  Brute Force도 항상 생각해야함 
 A) SubArray 
     Find subarray with total sum to be 0 
     
