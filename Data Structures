@@ -8,3 +8,18 @@
 
 
 4. Suffix Array
+
+
+5. heapq 
+
+  import heaq
+  
+  q = []
+  
+  heapq.heappush(q, (ar[i], i)) //tuple 형식으로 q에 insert 이런식으로 ar[i]와 해당하는 index번호를 assign해서 줄수도 있음 
+  
+  while q: //q안에 element가 있을때 까지 
+      value = q[0][0] //이런식으로 index playing이 가능하다. heapq에 가장 앞에 있는 값의 value 
+      ind = q[0][1]
+      
+      heapq.heappop(q) //heapq의 pop operation 
