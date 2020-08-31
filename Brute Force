@@ -1,0 +1,5 @@
+B. Power Sequence (Div2 666)
+  idea: C^i값은 i가 100이상만 가도 굉장히 숫자가 켜저서 무시해도됨. 
+  즉 c^i값이 대충 limit를 넘으면 이 c는 고려할 필요가없는 값이구나 해서 다음 possible c 값을 compute하면됨. 
+  c를 구하는건 brute force를 이용하고 모든 array안의 값을 naive하게 계산하면됨. 
+  
