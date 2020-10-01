@@ -18,21 +18,20 @@ def all_subsets(ss):
     for subset in all_subsets(ar):
         temp = list(map(int,subset))
  여기서 subset은 tuple 형식이라 list로 변환시켜줘야함 
+ 
+ C++ vector<pairt(int,int)> 
+ ar = [(1,2)]이런식으로 가능 
+  index accessing은 ar[0][1] 
 
 
 
 
-
-  Brute Force도 항상 생각해야함 
-A) SubArray 
-    Find subarray with total sum to be 0 
     
     
-    
-    
-    
-B) MEX 
-    
+Non-Zero segments #674 D
+어떤 array가 주어졌을때 어떤 segment의 합이 0이 되지 않게 만들려고함. 
+idea: prefix sum을 이용해서 그 prefix sum을 set에 넣고 매번 새로운 prefix sum이 만들어 질때마다 set안의 그 값이 있는지 비교. 
+있다면 그 사이에는 무조건 sum이 0인 구간이있으니 ans += 1
 
 
 
