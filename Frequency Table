@@ -32,6 +32,11 @@ for k,v in dict.items():
     dict = sorted(d.items())
     
     
+Position Table 
+ar안에 각 element들의 포지션을 store하는 ds 
+pos = [[] for _ in range(n+1)]
+for i in range(n):
+    pos[ar[i]].append(i+1)
 
-
+#673 K amazing number가 position table을 이용한 문제 
 
